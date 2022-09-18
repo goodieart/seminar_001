@@ -1,11 +1,12 @@
 ﻿using static System.Console;
+int max = 0, num = 0;
 
 WriteLine("Введите числа a,b,c: ");
-int max = int.Parse(ReadLine()!);
-int b = int.Parse(ReadLine()!);
-int c = int.Parse(ReadLine()!);
 
-if(b > max) max = b;
-if(c > max) max = c;
+for(int i = 0; i < 3; i++)
+{
+    num = int.Parse(ReadLine()!);
+    if(num > max) max = num;
+}
 
 WriteLine($"max = {max}");
